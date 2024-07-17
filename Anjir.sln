@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontend", "Frontend", "{05B110B2-6AA1-4873-8BF1-3E0316152DA6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateway", "Gateway", "{F311BDE5-7B0B-4E6B-8DF4-F724F45FA00B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Integration", "Integration", "{9072F8ED-6516-43C4-B932-3D26A97BDF2D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{1E92156E-82A8-4CBC-A19C-FDAEB7F39EB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anjir.Services.CouponAPI", "Anjir.Services.CouponAPI\Anjir.Services.CouponAPI.csproj", "{25DE8CAE-1E38-4559-A5F2-7DA960B95BA8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{25DE8CAE-1E38-4559-A5F2-7DA960B95BA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25DE8CAE-1E38-4559-A5F2-7DA960B95BA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25DE8CAE-1E38-4559-A5F2-7DA960B95BA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25DE8CAE-1E38-4559-A5F2-7DA960B95BA8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{25DE8CAE-1E38-4559-A5F2-7DA960B95BA8} = {1E92156E-82A8-4CBC-A19C-FDAEB7F39EB5}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4DC4FD33-E5A4-4D85-B2D6-05B7E340581D}
+	EndGlobalSection
+EndGlobal
