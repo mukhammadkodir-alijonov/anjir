@@ -7,9 +7,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Anjir.Services.CouponAPI.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/coupon")]
     [ApiController]
-    public class CouponAPIController : ControllerBase
+    public class CouponAPIController : ControllerBase   
     {
         private readonly AppDbContext _appDbContext;
         private ResponseDto _response;
