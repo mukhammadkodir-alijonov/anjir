@@ -22,6 +22,7 @@ namespace Anjir.Web.Service
                 HttpClient client = _httpClientFactory.CreateClient("AnjirAPI");
                 HttpRequestMessage message = new();
                 message.Headers.Add("Accept", "aplication/json");
+
                 message.RequestUri = new Uri(requestDto.Url);
                 if (requestDto.Data != null)
                 {
@@ -44,6 +45,7 @@ namespace Anjir.Web.Service
                         message.Method = HttpMethod.Get;
                         break;
                 }
+
                 apiResponse = await client.SendAsync(message);
 
                 switch (apiResponse.StatusCode)
@@ -74,5 +76,7 @@ namespace Anjir.Web.Service
                 return dto;
             }
         }
+
     }
 }
+

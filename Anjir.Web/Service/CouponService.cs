@@ -1,6 +1,7 @@
 ﻿using Anjir.Web.Models;
 using Anjir.Web.Service.IService;
 using Anjir.Web.Utility;
+using static Anjir.Web.Utility.SD;
 
 namespace Anjir.Web.Service
 {
@@ -17,8 +18,8 @@ namespace Anjir.Web.Service
         {
             return await _baseService.SendAsync(new RequestDto()
             {
-                ApiType = SD.ApiType.GET,
-                Url = SD.CouponAPIBase + "/api/coupon/GetByCode" + couponCode
+                ApiType = ApiType.GET,
+                Url = CouponAPIBase + "/api/coupon/GetByCode" + couponCode
             });
         }
 
@@ -26,8 +27,8 @@ namespace Anjir.Web.Service
         {
             return await _baseService.SendAsync(new RequestDto()
             {
-                ApiType = SD.ApiType.GET,
-                Url = SD.CouponAPIBase + "/api/coupon"
+                ApiType = ApiType.GET,
+                Url = CouponAPIBase + "/api/coupon"
             });
         }
 

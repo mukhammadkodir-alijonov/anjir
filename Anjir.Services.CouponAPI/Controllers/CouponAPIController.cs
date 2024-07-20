@@ -2,7 +2,6 @@
 using Anjir.Services.CouponAPI.Models;
 using Anjir.Services.CouponAPI.Models.Dto;
 using AutoMapper;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Anjir.Services.CouponAPI.Controllers
@@ -105,6 +104,7 @@ namespace Anjir.Services.CouponAPI.Controllers
             return _response;
         }
         [HttpDelete]
+        [Route("{id:int}")]
         public ResponseDto Delete(int id)
         {
             try
