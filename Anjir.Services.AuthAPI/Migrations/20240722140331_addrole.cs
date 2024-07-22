@@ -2,10 +2,10 @@
 
 #nullable disable
 
-namespace Anjir.Services.CouponAPI.Migrations
+namespace Anjir.Services.AuthAPI.Migrations
 {
     /// <inheritdoc />
-    public partial class _3comment : Migration
+    public partial class addrole : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

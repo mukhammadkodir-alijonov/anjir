@@ -5,7 +5,7 @@
 namespace Anjir.Services.CouponAPI.Migrations
 {
     /// <inheritdoc />
-    public partial class addcoupontodb : Migration
+    public partial class addCouponApi : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

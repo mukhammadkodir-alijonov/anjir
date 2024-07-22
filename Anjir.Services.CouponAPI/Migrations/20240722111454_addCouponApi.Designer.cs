@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Anjir.Services.CouponAPI.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240718104037_adddata")]
-    partial class adddata
+    [Migration("20240722111454_addCouponApi")]
+    partial class addCouponApi
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -45,22 +45,6 @@ namespace Anjir.Services.CouponAPI.Migrations
                     b.HasKey("CouponId");
 
                     b.ToTable("Coupons");
-
-                    b.HasData(
-                        new
-                        {
-                            CouponId = 1,
-                            CouponCode = "10OFF",
-                            DiscountAmount = 10.0,
-                            MinAmount = 100
-                        },
-                        new
-                        {
-                            CouponId = 2,
-                            CouponCode = "20OFF",
-                            DiscountAmount = 20.0,
-                            MinAmount = 200
-                        });
                 });
 #pragma warning restore 612, 618
         }
