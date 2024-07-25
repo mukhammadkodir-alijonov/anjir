@@ -1,12 +1,12 @@
-using Anjir.Services.CouponAPI.Configuration;
-using Anjir.Services.CouponAPI.Data;
-using Anjir.Services.CouponAPI.Extensions;
+
+
+using Anjir.Services.ProductAPI.Configuration;
+using Anjir.Services.ProductAPI.Data;
+using Anjir.Services.ProductAPI.Extensions;
 using AutoMapper;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
-using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -43,7 +43,7 @@ builder.Services.AddSwaggerGen(option =>
                     Type = ReferenceType.SecurityScheme,
                     Id = JwtBearerDefaults.AuthenticationScheme
                 }
-            }, new string[]{ } 
+            }, new string[]{ }
         }
     });
 });

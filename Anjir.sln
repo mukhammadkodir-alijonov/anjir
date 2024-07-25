@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Anjir.Services.CouponAPI", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Anjir.Web", "Anjir.Web\Anjir.Web.csproj", "{F61BDFE2-CE8C-4BB6-843B-864C3B774392}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anjir.Services.AuthAPI", "Anjir.Services.AuthAPI\Anjir.Services.AuthAPI.csproj", "{2CEF8CE8-543B-41A5-B7F7-11137BAC54BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Anjir.Services.AuthAPI", "Anjir.Services.AuthAPI\Anjir.Services.AuthAPI.csproj", "{2CEF8CE8-543B-41A5-B7F7-11137BAC54BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anjir.Services.ProductAPI", "Anjir.Services.ProductAPI\Anjir.Services.ProductAPI.csproj", "{7CD6A086-63E5-4917-A620-4E81BFFE4192}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +37,10 @@ Global
 		{2CEF8CE8-543B-41A5-B7F7-11137BAC54BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2CEF8CE8-543B-41A5-B7F7-11137BAC54BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CEF8CE8-543B-41A5-B7F7-11137BAC54BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CD6A086-63E5-4917-A620-4E81BFFE4192}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CD6A086-63E5-4917-A620-4E81BFFE4192}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CD6A086-63E5-4917-A620-4E81BFFE4192}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CD6A086-63E5-4917-A620-4E81BFFE4192}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,6 +49,7 @@ Global
 		{25DE8CAE-1E38-4559-A5F2-7DA960B95BA8} = {1E92156E-82A8-4CBC-A19C-FDAEB7F39EB5}
 		{F61BDFE2-CE8C-4BB6-843B-864C3B774392} = {05B110B2-6AA1-4873-8BF1-3E0316152DA6}
 		{2CEF8CE8-543B-41A5-B7F7-11137BAC54BB} = {1E92156E-82A8-4CBC-A19C-FDAEB7F39EB5}
+		{7CD6A086-63E5-4917-A620-4E81BFFE4192} = {1E92156E-82A8-4CBC-A19C-FDAEB7F39EB5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4DC4FD33-E5A4-4D85-B2D6-05B7E340581D}

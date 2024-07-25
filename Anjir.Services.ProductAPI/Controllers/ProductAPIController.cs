@@ -1,22 +1,23 @@
-﻿using Anjir.Services.CouponAPI.Data;
-using Anjir.Services.CouponAPI.Models;
-using Anjir.Services.CouponAPI.Models.Dto;
+﻿
+using Anjir.Services.ProductAPI.Data;
+using Anjir.Services.ProductAPI.Models;
+using Anjir.Services.ProductAPI.Models.Dto;
 using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Anjir.Services.CouponAPI.Controllers
+namespace Anjir.Services.ProductAPI.Controllers
 {
-    [Route("api/coupon")]
+    [Route("api/product")]
     [ApiController]
     [Authorize]
-    public class CouponAPIController : ControllerBase   
+    public class ProductAPIController : ControllerBase   
     {
         private readonly AppDbContext _appDbContext;
         private ResponseDto _response;
         private readonly IMapper _mapper;
 
-        public CouponAPIController(AppDbContext appDbContext,IMapper mapper)
+        public ProductAPIController(AppDbContext appDbContext,IMapper mapper)
         {
             _appDbContext = appDbContext;
             _response = new ResponseDto();
@@ -27,8 +28,8 @@ namespace Anjir.Services.CouponAPI.Controllers
         {
             try
             {
-                IEnumerable<Coupon> obList = _appDbContext.Coupons.ToList();
-                _response.Result = _mapper.Map<IEnumerable<CouponDto>>(obList);
+                IEnumerable<Product> obList = _appDbContext.Products.ToList();
+                _response.Result = _mapper.Map<IEnumerable<ProductDto>>(obList);
             }
             catch (Exception)
             {
@@ -43,24 +44,8 @@ namespace Anjir.Services.CouponAPI.Controllers
         {
             try
             {
-                Coupon ob = _appDbContext.Coupons.First(x => x.CouponId == id);
-                _response.Result = _mapper.Map<CouponDto>(ob);
-            }
-            catch (Exception)
-            {
-                _response.IsSuccess = false;
-                _response.Message = "Failed to retrieve data";
-            }
-            return _response;
-        }
-        [HttpGet]
-        [Route("GetByCode{code}")]
-        public ResponseDto GetByCode(string code)
-        {
-            try
-            {
-                Coupon ob = _appDbContext.Coupons.First(x => x.CouponCode.ToLower() == code.ToLower());
-                _response.Result = _mapper.Map<CouponDto>(ob);
+                Product ob = _appDbContext.Products.First(x => x.ProductId == id);
+                _response.Result = _mapper.Map<ProductDto>(ob);
             }
             catch (Exception)
             {
@@ -71,15 +56,15 @@ namespace Anjir.Services.CouponAPI.Controllers
         }
         [HttpPost]
         [Authorize(Roles ="ADMIN")]
-        public ResponseDto Post([FromBody] CouponDto couponDto)
+        public ResponseDto Post([FromBody] ProductDto productDto)
         {
             try
             {
-                Coupon ob = _mapper.Map<Coupon>(couponDto);
-                _appDbContext.Coupons.Add(ob);
+                Product ob = _mapper.Map<Product>(productDto);
+                _appDbContext.Products.Add(ob);
                 _appDbContext.SaveChanges();
 
-                _response.Result = _mapper.Map<CouponDto>(ob);
+                _response.Result = _mapper.Map<ProductDto>(ob);
             }
             catch (Exception)
             {
@@ -90,15 +75,15 @@ namespace Anjir.Services.CouponAPI.Controllers
         }
         [HttpPut]
         [Authorize(Roles = "ADMIN")]
-        public ResponseDto Put([FromBody] CouponDto couponDto)
+        public ResponseDto Put([FromBody] ProductDto productDto)
         {
             try
             {
-                Coupon ob = _mapper.Map<Coupon>(couponDto);
-                _appDbContext.Coupons.Update(ob);
+                Product ob = _mapper.Map<Product>(productDto);
+                _appDbContext.Products.Update(ob);
                 _appDbContext.SaveChanges();
 
-                _response.Result = _mapper.Map<CouponDto>(ob);
+                _response.Result = _mapper.Map<ProductDto>(ob);
             }
             catch (Exception)
             {
@@ -114,8 +99,8 @@ namespace Anjir.Services.CouponAPI.Controllers
         {
             try
             {
-                Coupon ob = _appDbContext.Coupons.First(x => x.CouponId == id);
-                _appDbContext.Coupons.Remove(ob);
+                Product ob = _appDbContext.Products.First(x => x.ProductId == id);
+                _appDbContext.Products.Remove(ob);
                 _appDbContext.SaveChanges();
             }
             catch (Exception)
