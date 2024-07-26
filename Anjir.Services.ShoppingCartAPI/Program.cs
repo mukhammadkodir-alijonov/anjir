@@ -1,6 +1,6 @@
-using Anjir.Services.ProductAPI.Configuration;
-using Anjir.Services.ProductAPI.Data;
-using Anjir.Services.ProductAPI.Extensions;
+using Anjir.Services.ShoppingCartAPI.Configuration;
+using Anjir.Services.ShoppingCartAPI.Data;
+using Anjir.Services.ShoppingCartAPI.Extensions;
 using AutoMapper;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;

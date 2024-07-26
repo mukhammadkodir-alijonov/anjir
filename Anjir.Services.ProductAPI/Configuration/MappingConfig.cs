@@ -11,8 +11,7 @@ namespace Anjir.Services.ProductAPI.Configuration
         {
             return new MapperConfiguration(config =>
             {
-                config.CreateMap<Product, ProductDto>();
-                config.CreateMap<ProductDto, Product>();
+                config.CreateMap<ProductDto, Product>().ReverseMap();
             });
         }
     }
