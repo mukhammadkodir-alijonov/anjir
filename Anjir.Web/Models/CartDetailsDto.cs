@@ -1,7 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
-
-namespace Anjir.Services.ShoppingCartAPI.Models.Dto
+﻿
+namespace Anjir.Web.Models
 {
     public class CartDetailsDto
     {

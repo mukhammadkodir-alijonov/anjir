@@ -1,4 +1,4 @@
-﻿namespace Anjir.Services.ShoppingCartAPI.Models.Dto
+﻿namespace Anjir.Web.Models
 {
     public class CartDto
     {

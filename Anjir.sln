@@ -19,7 +19,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Anjir.Services.AuthAPI", "A
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Anjir.Services.ProductAPI", "Anjir.Services.ProductAPI\Anjir.Services.ProductAPI.csproj", "{7CD6A086-63E5-4917-A620-4E81BFFE4192}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anjir.Services.ShoppingCartAPI", "Anjir.Services.ShoppingCartAPI\Anjir.Services.ShoppingCartAPI.csproj", "{DDF7EB1A-6B6B-4F4C-AF77-241E63AA55ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Anjir.Services.ShoppingCartAPI", "Anjir.Services.ShoppingCartAPI\Anjir.Services.ShoppingCartAPI.csproj", "{DDF7EB1A-6B6B-4F4C-AF77-241E63AA55ED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
