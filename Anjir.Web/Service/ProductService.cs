@@ -18,8 +18,8 @@ namespace Anjir.Web.Service
             return await _baseService.SendAsync(new RequestDto()
             {
                 ApiType = SD.ApiType.POST,
-                Data=productDto,
-                Url = SD.ProductAPIBase + "/api/product" ,
+                Data = productDto,
+                Url = SD.ProductAPIBase + "/api/product",
                 //ContentType = SD.ContentType.MultipartFormData
             });
         }
@@ -30,7 +30,7 @@ namespace Anjir.Web.Service
             {
                 ApiType = SD.ApiType.DELETE,
                 Url = SD.ProductAPIBase + "/api/product/" + id
-            }); 
+            });
         }
 
         public async Task<ResponseDto?> GetAllProductsAsync()
@@ -42,7 +42,7 @@ namespace Anjir.Web.Service
             });
         }
 
-      
+
 
         public async Task<ResponseDto?> GetProductByIdAsync(int id)
         {
